@@ -2,14 +2,12 @@
 	"schemaVersion": "0.1.0",
 	"name": "YouTube",
 	"behavior": "create",
-	"noteNameFormat": "{{schema:author}} – {{schema:name}}",
-	"path": "Clippings",
 	"noteContentFormat": "![{{schema:name}}]({{url}})",
 	"properties": [
 		{
-			"name": "title",
-			"value": "{{schema:name}}",
-			"type": "text"
+			"name": "categories",
+			"value": "[[Clippings]]",
+			"type": "multitext"
 		},
 		{
 			"name": "author",
@@ -17,9 +15,29 @@
 			"type": "multitext"
 		},
 		{
+			"name": "url",
+			"value": "{{url}}",
+			"type": "text"
+		},
+		{
+			"name": "created",
+			"value": "{{date}}",
+			"type": "date"
+		},
+		{
 			"name": "published",
 			"value": "{{schema:uploadDate|date:YYYY-MM-DD}}",
 			"type": "date"
+		},
+		{
+			"name": "topics",
+			"value": "",
+			"type": "multitext"
+		},
+		{
+			"name": "title",
+			"value": "{{schema:name}}",
+			"type": "text"
 		},
 		{
 			"name": "source",
@@ -32,17 +50,14 @@
 			"type": "text"
 		},
 		{
-			"name": "created",
-			"value": "{{date}}",
-			"type": "text"
-		},
-		{
 			"name": "tags",
-			"value": "videos",
-			"type": "text"
+			"value": "videos,clippings",
+			"type": "multitext"
 		}
 	],
 	"triggers": [
 		"https://www.youtube.com/watch?v="
-	]
+	],
+	"noteNameFormat": "{{schema:author}} – {{schema:name}}",
+	"path": "Clippings"
 }
