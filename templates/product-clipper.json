@@ -2,8 +2,6 @@
 	"schemaVersion": "0.1.0",
 	"name": "Product",
 	"behavior": "create",
-	"noteNameFormat": "{{title}}",
-	"path": "References",
 	"noteContentFormat": "{{description}}",
 	"properties": [
 		{
@@ -40,9 +38,16 @@
 			"name": "image",
 			"value": "{{image}}",
 			"type": "text"
+		},
+		{
+			"name": "url",
+			"value": "{{url}}",
+			"type": "text"
 		}
 	],
 	"triggers": [
 		"schema:@Product"
-	]
+	],
+	"noteNameFormat": "{{title}}",
+	"path": "References"
 }

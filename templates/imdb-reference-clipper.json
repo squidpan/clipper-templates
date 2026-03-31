@@ -2,8 +2,6 @@
 	"schemaVersion": "0.1.0",
 	"name": "IMDB reference",
 	"behavior": "create",
-	"noteNameFormat": "{{selector:.hero__primary-text}}",
-	"path": "References",
 	"noteContentFormat": "",
 	"properties": [
 		{
@@ -74,5 +72,7 @@
 	],
 	"triggers": [
 		"/^https:\\/\\/www\\.imdb\\.com\\/title\\/tt\\d+\\/reference\\/?$/"
-	]
+	],
+	"noteNameFormat": "{{selector:.hero__primary-text}}",
+	"path": "References"
 }

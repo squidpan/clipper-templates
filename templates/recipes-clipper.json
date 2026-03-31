@@ -6,7 +6,7 @@
 	"properties": [
 		{
 			"name": "categories",
-			"value": "[[Recipes]]",
+			"value": "[[Recipe]]",
 			"type": "multitext"
 		},
 		{
@@ -37,7 +37,7 @@
 		{
 			"name": "url",
 			"value": "{{url}}",
-			"type": "multitext"
+			"type": "text"
 		},
 		{
 			"name": "created",

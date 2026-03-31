@@ -10,34 +10,19 @@
 			"type": "multitext"
 		},
 		{
+			"name": "title",
+			"value": "{{schema:name}}",
+			"type": "text"
+		},
+		{
 			"name": "author",
 			"value": "{{schema:author|wikilink}}",
 			"type": "multitext"
 		},
 		{
-			"name": "url",
-			"value": "{{url}}",
-			"type": "text"
-		},
-		{
-			"name": "created",
-			"value": "{{date}}",
-			"type": "date"
-		},
-		{
 			"name": "published",
 			"value": "{{schema:uploadDate|date:YYYY-MM-DD}}",
 			"type": "date"
-		},
-		{
-			"name": "topics",
-			"value": "",
-			"type": "multitext"
-		},
-		{
-			"name": "title",
-			"value": "{{schema:name}}",
-			"type": "text"
 		},
 		{
 			"name": "source",
@@ -50,8 +35,13 @@
 			"type": "text"
 		},
 		{
+			"name": "created",
+			"value": "{{date}}",
+			"type": "date"
+		},
+		{
 			"name": "tags",
-			"value": "videos,clippings",
+			"value": "videos",
 			"type": "multitext"
 		}
 	],
